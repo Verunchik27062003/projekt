@@ -1,0 +1,8 @@
+{% extends "myapp/base.html" %}
+
+{% block title %}{{ team.name }}{% endblock %}
+
+{% block content %}
+<h2>{{ team.name }}</h2>
+<a href="{% url 'team_list_html' %}">Powrót do listy drużyn</a>
+{% endblock %}
